@@ -1,0 +1,40 @@
+{
+    "quiz": {
+        "Id": 1,
+        "name": "HTML Quiz",
+        "description": "HTML Quiz"
+    },
+    "questions": [{
+        "Id": 1,
+        "Name": "What does HTML stand for?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1, "Name": "Home Tool Markup Language", "IsAnswer": false },
+            { "Id": 2, "Name": "Hyper Text Markup Language", "IsAnswer": true },
+            { "Id": 3, "Name": "Hyperlinks Text Markup Language", "IsAnswer": false },
+            { "Id": 4, "Name": "None of the above", "IsAnswer": false }],
+        "QuestionType": { "Id": 1, "Name": "Single Choice", "IsActive": true }
+    },
+    {
+        "Id": 2,
+        "Name": "Who is making the Web standards?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 5, "Name": "Mozilla", "IsAnswer": false },
+            { "Id": 6, "Name": "Microsoft", "IsAnswer": false },
+            { "Id": 7, "Name": "The World Wide Web Consortium", "IsAnswer": true },
+            { "Id": 8, "Name": "Google", "IsAnswer": false }],
+        "QuestionType": { "Id": 1, "Name": "Single Choice", "IsActive": true }
+    },
+    {
+        "Id": 3,
+        "Name": "The HTML <canvas> element is used to?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 9, "Name": "draw graphics", "IsAnswer": true },
+            { "Id": 10, "Name": "create draggable elements", "IsAnswer": false },
+            { "Id": 11, "Name": "display database records", "IsAnswer": false },
+            { "Id": 12, "Name": "manipulate data in MySQL", "IsAnswer": false }],
+        "QuestionType": { "Id": 1, "Name": "Single Choice", "IsActive": true }
+    }]
+}

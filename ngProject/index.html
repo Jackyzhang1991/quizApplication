@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="quizApp">
+<head>
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="app.js"></script>
+    <script src="controller/quizCtrl.js"></script>
+    <script src="controller/resultCtrl.js"></script>
+    <script src="routing/stateConfig.js"></script>
+    <script src="services/routeService.js"></script>
+    <script src="services/dataStorage.service.js"></script>
+    <script src="vendor/ngStorage-modified.js"></script>
+</head>
+<body>
+    <div class="main">
+        <ui-view></ui-view>
+    </div>
+</body>
+</html>

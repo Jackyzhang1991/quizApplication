@@ -1,0 +1,135 @@
+﻿body {
+    font-family: 'Roboto Condensed',Verdana,sans-serif;
+    margin: auto;
+    max-width: 95%;
+    width: 900px;
+}
+
+h1{
+    color: darkred;
+    font-size: 26px;
+    font-weight: normal;
+}
+h2{
+    font-size:20px;
+    font-weight:normal;
+}
+
+.btn-toolbar>.btn {
+    margin-left: 20px;
+}
+
+.header-right{
+    padding-left: 50px;
+    padding-top: 12px;
+    float: right;
+    text-align: right;
+}
+
+.center{
+    border-bottom: solid 1px #dedede;
+    border-top: solid 1px #dedede;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    text-align:center;
+}
+
+.question{
+    border: 1px solid lightblue;
+    color: #151569;
+    min-height: 260px;
+    padding: 6px;
+    text-align: center;
+}
+    .question h2{
+        font-size:24px;
+        font-weight:normal;
+    }
+
+#quiz .options {
+    margin: 10px auto 0 auto;
+    max-width: 800px;
+}
+#quiz .options > div{
+    display:inline-block;
+}
+    .prevP {
+        display: inline-block;
+        float: left;
+        margin-left: 30px;
+    }
+    .nextP {
+        display: inline-block;
+        float: right;
+        margin-right: 30px;
+    }
+
+#quiz .result-options {
+    margin: auto;
+    max-width: 800px;
+    text-align: left;
+}
+    #quiz .result-options > div{
+        display:inline-block;
+    }
+    .result-correct{
+        background-color: lightblue;
+    }
+    .result-incorrect{
+        background-color: red;
+    }
+
+div.review{
+    margin-top: 50px;
+    text-align:center;
+}
+    div.review > div {
+        cursor: pointer;
+        display: inline-block;
+        margin: 2px;
+        width: 25%;
+    }
+
+.answered {
+    background-color: lightgreen;
+    border: 1px solid green;
+    padding: 12px;
+}
+
+.not-answered {
+    background-color: lightcoral;
+    border: 1px solid red;
+    padding: 12px;
+}
+
+.result {
+    width: 900px;
+}
+    .result-question{
+        border-bottom: 1px solid lightblue;
+        margin: 40px auto;
+    }
+    .result-question h3 {
+        font-size:18px;
+        font-weight:normal;
+    }
+
+.bottomNav {
+    margin-top: 20px;
+}
+
+.choice-box {
+    background-color: #e7f2f9;
+    border: 1px solid #666;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px;
+    width: 350px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+    .choice-box:hover {
+        background-color: #bad3e2;
+    }

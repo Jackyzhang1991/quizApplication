@@ -1,0 +1,48 @@
+﻿<div class="header">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Welcome to Jackie's Quiz Application</h2>
+        </div>
+        <div class="col-md-3 header-right btn-toolbar">
+            <button class="btn btn-info" ng-repeat="button in buttons" ng-click="loadQuiz(button)">{{button}}</button>
+        </div>
+    </div>
+</div>
+<div id="quiz">
+    <h1 class="center">{{quiz.name}}</h1>
+
+    <div ng-show="mode=='quiz'">
+        <div ng-repeat="question in filteredQuestions">
+            <div class="label label-success">Question {{currentPage}} of {{totalItems}}.</div>
+            <div class="question">
+                <h2>{{currentPage}}. <span ng-bind-html="question.Name"></span></h2>
+                <div class="options">
+                    <div ng-repeat="option in question.Options">
+                        <input type="button" id="{{option.Id}}" value="{{option.Name}}" ng-class="{'button-checked' : checkIfExists(option.Id)}" class="choice-box" ng-model="option.Selected" ng-click="onSelect(question, option);">
+                    </div>
+                </div>
+
+                <div class="quizNav">
+                    <div class="prevP">
+                        <input type="image" ng-src="{{choosePrevImg(currentPage)}}" class="prevButton" width="" height="" ng-click="goTo(currentPage - 1)" />
+                    </div>
+                    <div class="nextP">
+                        <input type="image" ng-src="{{chooseNextImg(currentPage)}}" class="nextButton" width="" height="" ng-click="goTo(currentPage + 1)" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="review" ng-show="mode=='review'">
+        <div ng-repeat="question in questions">
+            <div ng-click="goTo($index + 1)" class="{{ isAnswered($index) == 'Answered'? 'answered': 'not-answered' }}">{{$index + 1}}. {{ isAnswered($index) }}</div>
+        </div>
+    </div>
+
+    <div class="bottomNav">
+        <button class="btn btn-default" ng-click="mode = 'quiz'">Quiz</button>
+        <button class="btn btn-default" ng-click="mode = 'review'">Review</button>
+        <button class="btn btn-default submit" ng-click="onSubmit();route('result')">Submit Quiz</button>
+    </div>
+</div>

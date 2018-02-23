@@ -1,0 +1,13 @@
+<div class="result">
+   <h2>Quiz Result</h2>
+   <div ng-repeat="question in questions">
+      <div class="result-question">
+         <h3>{{$index + 1}}. {{question.Name}}</h3>
+         <div class="result-options">
+            <div>{{options[question.Id].Name}}</div>
+         </div>
+         <h4 class="alert {{ isCorrect(question) == 'correct'? 'alert-success': 'alert-danger'}}">Your answer is {{isCorrect(question)}}.</h4>
+      </div>
+   </div>
+   <h4 class="alert alert-info text-center" id="demo">You got {{score}} out of {{questions.length}} correct. You correct rate is {{correctRate}}</h4>
+</div>

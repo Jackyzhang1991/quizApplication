@@ -1,0 +1,40 @@
+{
+    "quiz": {
+        "Id": 2,
+        "name": "CSS Quiz",
+        "description": "CSS Quiz"
+    },
+    "questions": [{
+        "Id": 1,
+        "Name": "What does CSS stand for?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1, "Name": "Creative Style Sheets", "IsAnswer": false },
+            { "Id": 2, "Name": "Colorful Style Sheets", "IsAnswer": false },
+            { "Id": 3, "Name": "Computer Style Sheets", "IsAnswer": false },
+            { "Id": 4, "Name": "Cascading Style Sheets", "IsAnswer": true }],
+        "QuestionType": { "Id": 1, "Name": "Single Choice", "IsActive": true }
+    },
+    {
+        "Id": 2,
+        "Name": "How do you display hyperlinks without an underline?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 5, "Name": "a {text-decoration:no-underline;}", "IsAnswer": false },
+            { "Id": 6, "Name": "a {decoration:no-underline;}", "IsAnswer": false },
+            { "Id": 7, "Name": "a {text-decoration:none;}", "IsAnswer": true },
+            { "Id": 8, "Name": "a {underline:none;}", "IsAnswer": false }],
+        "QuestionType": { "Id": 1, "Name": "Single Choice", "IsActive": true }
+    },
+    {
+        "Id": 3,
+        "Name": "How do you make a list that lists its items with squares?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 9, "Name": "list: square;", "IsAnswer": false },
+            { "Id": 10, "Name": "list-style-type: square;", "IsAnswer": true },
+            { "Id": 11, "Name": "list-type: square;", "IsAnswer": false },
+            { "Id": 12, "Name": "Type: square;", "IsAnswer": false }],
+        "QuestionType": { "Id": 1, "Name": "Single Choice", "IsActive": true }
+    }]
+}
